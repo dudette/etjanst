@@ -481,11 +481,22 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/script\/script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/script\/script.js",
+		"outputAbbreviatedPath": "\/script\/min\/script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Amanda Reyes",
+"lastSavedByUser": "Matilda Aspman",
 "manualImportLinks": {
 	},
 "projectAttributes": {
