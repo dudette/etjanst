@@ -1,7 +1,8 @@
 $(document).ready(function() { 
-	$('.submenu-icon').on('click', function(){
+	$('.expand').on('click', function(){
 		//$(this).addClass('hej');
 		$(this).closest('li').find('.thirdmenu').toggle();
+		$('.expand').toggleClass('open');
 	});
 });
 
