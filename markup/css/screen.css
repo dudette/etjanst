@@ -1653,6 +1653,10 @@ p {
       display: inline-block;
       margin-right: 20px;
       color: #FFFFFF; }
+      @media screen and (max-width: 640px) {
+        .top-nav ul li {
+          display: block;
+          margin: 0; } }
       .top-nav ul li:last-child {
         margin-right: 0; }
       .top-nav ul li a {
@@ -1678,9 +1682,10 @@ header .logo {
     font-size: 22px; }
 header .toggle-menu {
   float: right;
-  margin-top: 60px;
+  margin-top: 50px;
   display: none;
-  font-size: 22px; }
+  font-size: 22px;
+  line-height: 40px; }
   @media screen and (max-width: 640px) {
     header .toggle-menu {
       display: block; } }
@@ -1721,10 +1726,12 @@ header nav.menu {
         header nav.menu a.menu-item:hover, header nav.menu a.menu-item:focus, header nav.menu a.menu-item.active {
           border: none;
           background-color: #3E93B1;
-          color: white; } }
+          color: white;
+          text-decoration: underline; } }
 
 .submenu {
-  border: 2px solid #F2F2F2; }
+  border: 2px solid #F2F2F2;
+  margin-bottom: 20px; }
   .submenu ul li {
     border-bottom: 2px solid #F2F2F2; }
     .submenu ul li:last-child {

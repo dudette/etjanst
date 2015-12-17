@@ -11,7 +11,10 @@
 			display: inline-block;
 			margin-right: 20px;
 			color: $white;
-
+			@media screen and (max-width: 640px) {
+				display: block;
+				margin: 0;
+			}
 			&:last-child {
 				margin-right: 0;
 			}
