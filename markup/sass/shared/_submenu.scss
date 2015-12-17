@@ -1,8 +1,10 @@
 .submenu {
 	border: 2px solid $light-gray;
+	margin-bottom: 20px;
 
 	ul {
 		li {
+			position: relative;
 			
 			border-bottom: 2px solid $light-gray;
 
@@ -33,7 +35,7 @@
 					
 				}
 				&.has-sub {
-					width: 85%;
+					width: 100%;
 					display: inline-block;
 				}
 
@@ -42,13 +44,27 @@
 				}
 			}
 			.expand {
-				width: 10%;
 				display: inline-block;
+				position: absolute;
+				padding: 15px;
+				top:0;
+				right:0;
+				cursor: pointer;
+
+				&:hover {
+					background: lighten($blue, 30%);
+				}
+
+				&.open {
+					img {
+						@include transform(rotate(180deg));
+					}
+				}
 
 				img {
 					width: 15px;
 					height: auto;
-					cursor: pointer;
+					vertical-align: baseline;
 				}
 			}
 
