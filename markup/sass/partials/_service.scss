@@ -33,5 +33,10 @@
 	.text-box {
 		background: $white;
 		padding: 15px;
+		min-height: 200px;
+
+		@media (max-width: 640px) {
+			min-height: auto;
+		}
 	}
 }
