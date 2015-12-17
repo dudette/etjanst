@@ -1,0 +1,25 @@
+.read-more {
+	background: $purple;
+	color: $white;
+	padding: 10px;
+	width: 100%;
+	display: block;
+
+	&:after {
+		content: "";
+		height: 20px;
+		background: url("../img/arrow.svg") no-repeat 0 0;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 20px;
+	}
+
+	&:hover {
+		background: darken($purple, 6%);
+		text-decoration: underline;
+		color: $white;
+	}
+}

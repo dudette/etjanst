@@ -1,0 +1,167 @@
+// bootstrap variables
+
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+
+$font-size-base:          14px !default;
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+// for tooltip
+// //** Tooltip max width
+// $tooltip-max-width:           200px !default;
+// //** Tooltip text color
+// $tooltip-color:               #fff !default;
+// //** Tooltip background color
+// $tooltip-bg:                  #000 !default;
+// $tooltip-opacity:             .9 !default;
+// //** Tooltip arrow width
+// $tooltip-arrow-width:         5px !default;
+// //** Tooltip arrow color
+// $tooltip-arrow-color:         $tooltip-bg !default;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+// //== Popovers
+// //
+// //##
+
+// //** Popover body background color
+// $popover-bg:                          rgba(140,205,195,0.75) !default;
+// //** Popover maximum width
+// $popover-max-width:                   476px !default;
+// //** Popover border color
+// $popover-border-color:                rgba(140,205,195,0.75) !default; //rgba(0,0,0,.2)
+// //** Popover fallback border color
+// $popover-fallback-border-color:       #8ccdc3 !default; //#ccc
+
+// //** Popover title background color
+// $popover-title-bg:                    darken($popover-bg, 3%) !default;
+
+// //** Popover arrow width
+// $popover-arrow-width:                 10px !default;
+// //** Popover arrow color
+// $popover-arrow-color:                 rgba(140,205,195,0.75) !default; //#fff
+
+// //** Popover outer arrow width
+// $popover-arrow-outer-width:           ($popover-arrow-width + 1) !default;
+// //** Popover outer arrow color
+// $popover-arrow-outer-color:           rgba(140,205,195,0.75) !default; //fade_in($popover-border-color, 0.05)
+// //** Popover outer arrow fallback color
+// $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%) !default;
+
+// Transformations
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+}
+
+// Transitions
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+$modal-inner-padding:         25px !default;
+
+//** Padding applied to the modal title
+$modal-title-padding:         25px !default;
+//** Modal title line-height
+$modal-title-line-height:     $line-height-base !default;
+
+//** Background color of modal content area
+$modal-content-bg:                             rgba(140,205,195,0.9) !default;
+//** Modal content border color
+$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+//** Modal content border color **for IE8**
+$modal-content-fallback-border-color:          #999 !default;
+
+//** Modal backdrop background color
+$modal-backdrop-bg:           #fff !default;
+//** Modal backdrop opacity
+$modal-backdrop-opacity:      .75 !default;
+//** Modal header border color
+$modal-header-border-color:   #e5e5e5 !default;
+//** Modal footer border color
+$modal-footer-border-color:   $modal-header-border-color !default;
+
+$modal-lg:                    800px !default;
+$modal-md:                    530px !default;
+$modal-sm:                    300px !default;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+// variables
+// break-points for responsive design
+// $break-extra-large: 1350px;
+$break-large: 1200px;
+$break-big: 992px;
+$break-medium: 768px;
+$break-small: 480px;
+$break-extra-small: 320px;
+
+//Colors
+
+$purple: #662D89;
+$light-purple: #F9F7FA;
+$blue: #3E93B1;
+$light-blue: #13B5EA;
+$silver: #EBEBEB;
+$light-gray: #F2F2F2;
+$fog: #E6E6E6;
+$white: #FFFFFF;
+$black: #141313;
+
