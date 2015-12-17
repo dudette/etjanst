@@ -1,7 +1,12 @@
 .info-puff {
 	border: 2px solid $silver;
 	background: $white;
-
+	@media screen and (max-width: $break-medium) {
+		margin-bottom: 20px;
+	}
+	h2 {
+		margin-bottom: 10px;
+	}
 	.content {
 		padding: 15px;
 	}

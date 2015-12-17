@@ -7,6 +7,9 @@ $zindex-tooltip:           1070 !default;
 
 $font-size-base:          14px !default;
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+
 // for tooltip
 // //** Tooltip max width
 // $tooltip-max-width:           200px !default;
@@ -164,4 +167,5 @@ $light-gray: #F2F2F2;
 $fog: #E6E6E6;
 $white: #FFFFFF;
 $black: #141313;
+
 

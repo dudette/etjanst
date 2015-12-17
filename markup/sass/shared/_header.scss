@@ -1,34 +1,76 @@
 header {
 	.logo {
+		float: left;
+		display: inline-block;
+		margin: 20px 0;
+		@media screen and (max-width: 640px) {
+			float: none;
+		}
+		&:hover {
+			text-decoration: none;
+		}
 		img {
-			width: 100%;
 			height: auto;
 		}
 		div {
 			text-align: center;
 			color: $black;
-			font-size: 32px;
+			font-size: 22px;
+		}
+	}
+	.toggle-menu {
+		float: right;
+		margin-top: 60px;
+		display: none;
+		font-size: 22px;
+		@media screen and (max-width: 640px) {
+			display: block;
 		}
 	}
 	nav.menu {
-		text-align: right;
-		padding: 20px 0;
 		line-height: 100px;
+		display: block;
+		float: right;
+		padding: 20px 0;
+		@media screen and (max-width: 640px) {
+			float: none;
+			line-height: 0;
+			display: none;
+			width: 100%;
+		}
+		li {
+			display: inline;
+			line-height: 1.5;
+			margin-right: 20px;
+			@media screen and (max-width: 640px) {
+				display: block;
+				margin-right: 0;
+				text-align: center;
+				border-top: 2px solid $light-gray;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 		a.menu-item {
 			color: $black;
 			font-size: 16px;
-			line-height: 1.5;
-			margin-right: 20px;
+
+			@media screen and (max-width: 640px) {
+				display: block;
+				padding: 15px 0;
+			}
 
 			&:hover,
 			&:focus,
 			&.active{
 				text-decoration: none;
 				border-bottom: 4px solid $blue;
-			}
-
-			&:last-child {
-				margin-right: 0;
+				@media screen and (max-width: 640px) {
+					border: none;
+					background-color: $blue;
+					color: white;
+				}
 			}
 		}
 	}
