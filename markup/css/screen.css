@@ -1789,7 +1789,8 @@ footer {
   color: #FFFFFF;
   padding: 10px;
   width: 100%;
-  display: block; }
+  display: block;
+  text-align: center; }
   .read-more:after {
     content: "";
     height: 20px;
