@@ -1,9 +1,7 @@
 .service {
 	position: relative;
 	border: 2px solid $light-gray;
-	@media screen and (max-width: $break-medium) {
-		margin-bottom: 20px;
-	}
+	margin-bottom: 20px;
 	h2 {
 		margin-bottom: 10px;
 	}

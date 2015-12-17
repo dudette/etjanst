@@ -1839,10 +1839,8 @@ footer {
 
 .service {
   position: relative;
-  border: 2px solid #F2F2F2; }
-  @media screen and (max-width: 768px) {
-    .service {
-      margin-bottom: 20px; } }
+  border: 2px solid #F2F2F2;
+  margin-bottom: 20px; }
   .service h2 {
     margin-bottom: 10px; }
   .service .category {
