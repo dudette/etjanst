@@ -1,8 +1,17 @@
 footer {
 	background: $black;
 	color: $white;
-
+	.footer-section {
+		@media screen and (max-width: $break-medium) {
+			margin-bottom: 20px;
+		}
+	}
+	b {
+		margin-bottom: 10px;
+		display: inline-block;
+	}
 	span {
 		display: block;
+		margin-bottom: 7px;
 	}
 }

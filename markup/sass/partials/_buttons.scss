@@ -1,5 +1,5 @@
 .read-more {
-	background: $purple;
+	background: $blue;
 	color: $white;
 	padding: 10px;
 	width: 100%;
@@ -18,7 +18,7 @@
 	}
 
 	&:hover {
-		background: darken($purple, 6%);
+		background: darken($blue, 6%);
 		text-decoration: underline;
 		color: $white;
 	}
