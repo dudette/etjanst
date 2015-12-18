@@ -11,9 +11,17 @@
 			display: inline-block;
 			margin-right: 20px;
 			color: $white;
+
 			@media screen and (max-width: 640px) {
 				display: block;
 				margin: 0;
+				width: 50%;
+				float: left;
+				text-align: left;
+				&:nth-child(2n) {
+		
+					text-align: right;
+				}
 			}
 			&:last-child {
 				margin-right: 0;
@@ -26,6 +34,11 @@
 				&:hover,
 				&:focus {
 					text-decoration: underline;
+				}
+
+				@media (max-width: 640px) {
+					display: block;
+					padding: 15px 0;
 				}
 			}
 		}

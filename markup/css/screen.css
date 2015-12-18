@@ -1656,7 +1656,12 @@ p {
       @media screen and (max-width: 640px) {
         .top-nav ul li {
           display: block;
-          margin: 0; } }
+          margin: 0;
+          width: 50%;
+          float: left;
+          text-align: left; }
+          .top-nav ul li:nth-child(2n) {
+            text-align: right; } }
       .top-nav ul li:last-child {
         margin-right: 0; }
       .top-nav ul li a {
@@ -1664,6 +1669,10 @@ p {
         color: white; }
         .top-nav ul li a:hover, .top-nav ul li a:focus {
           text-decoration: underline; }
+        @media (max-width: 640px) {
+          .top-nav ul li a {
+            display: block;
+            padding: 15px 0; } }
 
 header .logo {
   float: left;
