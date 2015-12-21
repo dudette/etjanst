@@ -12,3 +12,34 @@
 .open {
 	display: block;
 }
+.links {
+	h3 {
+		margin-bottom: 10px;
+	}
+	a {
+		display: block;
+		margin-bottom: 10px;
+	}
+	a.internal-link {
+		&:before {
+			content:"";
+			background: url("../img/internal-link.svg");
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			margin-right: 5px;
+			margin-bottom: -3px;
+		}
+	}
+	a.external-link {
+		&:before {
+			content:"";
+			background: url("../img/external-link.svg");
+			width: 20px;
+			height: 18px;
+			display: inline-block;
+			margin-right: 5px;
+			margin-bottom: -3px;
+		}
+	}
+}
