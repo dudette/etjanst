@@ -24,6 +24,7 @@ header {
 		display: none;
 		font-size: 22px;
 		line-height: 40px;
+		color: $blue;
 		@media screen and (max-width: 640px) {
 			display: block;
 		}
@@ -34,7 +35,6 @@ header {
 		  transition: .3s;
 		  cursor: pointer;
 		  user-select: none;
-		  border-radius: $button-size/7;
 		 
 		  &:hover {
 		    opacity: 1;
@@ -49,8 +49,11 @@ header {
 		.lines {
 		  @include line;
 		  position: relative; 
+		  display: block;
+		  margin-bottom: 10px;
 
-		  &:before, &:after {
+		  &:before, 
+		  &:after {
 		   
 		   @include line;
 		    position: absolute;
