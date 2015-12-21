@@ -1821,23 +1821,35 @@ header nav.menu {
         width: 15px;
         height: auto;
         vertical-align: baseline; }
-    .submenu ul li ul.thirdmenu {
+    .submenu ul li ul.secondmenu, .submenu ul li ul.thirdmenu {
       display: none; }
-      .submenu ul li ul.thirdmenu li {
-        border-bottom: 2px solid #F2F2F2; }
-        .submenu ul li ul.thirdmenu li:last-child {
-          border-bottom: none; }
-        .submenu ul li ul.thirdmenu li a {
-          color: #141313;
-          padding: 15px;
-          display: block;
-          background: #EBEBEB; }
-          .submenu ul li ul.thirdmenu li a:hover {
-            background: #3E93B1;
-            color: #FFFFFF; }
-          .submenu ul li ul.thirdmenu li a.active {
-            background: #3E93B1;
-            color: #FFFFFF; }
+      .submenu ul li ul.secondmenu li:last-child, .submenu ul li ul.thirdmenu li:last-child {
+        border-bottom: none; }
+      .submenu ul li ul.secondmenu li a, .submenu ul li ul.thirdmenu li a {
+        color: #141313;
+        padding: 15px;
+        display: block; }
+        .submenu ul li ul.secondmenu li a:hover, .submenu ul li ul.thirdmenu li a:hover {
+          background: #3E93B1;
+          color: #FFFFFF; }
+    .submenu ul li ul.secondmenu li {
+      border-bottom: 2px solid #F2F2F2; }
+      .submenu ul li ul.secondmenu li a {
+        background: #EBEBEB;
+        padding-left: 25px; }
+        .submenu ul li ul.secondmenu li a.active {
+          background: #3E93B1;
+          color: #FFFFFF;
+          border: none; }
+    .submenu ul li ul.thirdmenu li {
+      border-bottom: 2px solid #EBEBEB; }
+      .submenu ul li ul.thirdmenu li a {
+        background: #D1D1D1;
+        padding-left: 35px; }
+        .submenu ul li ul.thirdmenu li a.active {
+          background: gray;
+          color: #FFFFFF;
+          border: none; }
 
 footer {
   background: #141313;
@@ -1928,7 +1940,7 @@ footer {
   content: "";
   background: url("../img/external-link.svg");
   width: 20px;
-  height: 18px;
+  height: 17px;
   display: inline-block;
   margin-right: 5px;
   margin-bottom: -3px; }

@@ -68,13 +68,10 @@
 			}
 
 			//thirdmenu styling
-			ul.thirdmenu {
+			ul.secondmenu, ul.thirdmenu {
 				display: none;
 				
 				li {
-					
-					border-bottom: 2px solid $light-gray;
-
 					&:last-child {
 						border-bottom: none;
 					}
@@ -83,16 +80,40 @@
 						color: $black;
 						padding: 15px;
 						display: block;
-						background: $silver;
 
 						&:hover {
 								background: $blue;
 								color: $white;
 						}
+					}
+				}
+			}
+			ul.secondmenu {
+				li {
+					border-bottom: 2px solid $light-gray;
+					a {
+						background: $silver;
+						padding-left: 25px;
 
 						&.active {
 							background: $blue;
 							color: $white;
+							border: none;
+						}
+					}
+				}
+			}
+			ul.thirdmenu {
+				li {
+					border-bottom: 2px solid $silver;
+					a {
+						background: $gray;
+						padding-left: 35px;
+
+						&.active {
+							background: $dark-gray;
+							color: $white;
+							border: none;
 						}
 					}
 				}
