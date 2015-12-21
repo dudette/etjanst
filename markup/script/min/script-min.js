@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".expand").on("click",function(){$(this).closest("li").find(".thirdmenu").toggle(),$(".expand").toggleClass("open")})}),$(".toggle-menu").click(function(){$(".menu").slideToggle(200)});
+$(document).ready(function(){$(".expand").on("click",function(){$(this).closest("li").find(".thirdmenu").toggle(),$(this).toggleClass("open")})}),$(".toggle-menu").click(function(){$(".menu").slideToggle(200)});
