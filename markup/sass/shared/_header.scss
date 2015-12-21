@@ -27,6 +27,40 @@ header {
 		@media screen and (max-width: 640px) {
 			display: block;
 		}
+		 
+		.lines-button {
+		  display: inline-block;
+		  padding: $button-size/2 $button-size/4;
+		  transition: .3s;
+		  cursor: pointer;
+		  user-select: none;
+		  border-radius: $button-size/7;
+		 
+		  &:hover {
+		    opacity: 1;
+		  }
+		 
+		  &:active {
+		    transition: 0;
+		    background: rgba(0,0,0,.1);
+		  }
+		}
+
+		.lines {
+		  @include line;
+		  position: relative; 
+
+		  &:before, &:after {
+		   
+		   @include line;
+		    position: absolute;
+		    left:0;
+		    content: '';
+		    transform-origin: $button-size/14 center;
+		  }
+		  &:before { top: $button-size/4; }
+		  &:after { top: -$button-size/4; }
+		}
 	}
 	nav.menu {
 		line-height: 100px;

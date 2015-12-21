@@ -1698,6 +1698,41 @@ header .toggle-menu {
   @media screen and (max-width: 640px) {
     header .toggle-menu {
       display: block; } }
+  header .toggle-menu .lines-button {
+    display: inline-block;
+    padding: 1.75rem 0.875rem;
+    transition: .3s;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.5rem; }
+    header .toggle-menu .lines-button:hover {
+      opacity: 1; }
+    header .toggle-menu .lines-button:active {
+      transition: 0;
+      background: rgba(0, 0, 0, 0.1); }
+  header .toggle-menu .lines {
+    display: inline-block;
+    width: 3.5rem;
+    height: 0.5rem;
+    background: #3E93B1;
+    border-radius: 0.25rem;
+    transition: 0.3s;
+    position: relative; }
+    header .toggle-menu .lines:before, header .toggle-menu .lines:after {
+      display: inline-block;
+      width: 3.5rem;
+      height: 0.5rem;
+      background: #3E93B1;
+      border-radius: 0.25rem;
+      transition: 0.3s;
+      position: absolute;
+      left: 0;
+      content: '';
+      transform-origin: 0.25rem center; }
+    header .toggle-menu .lines:before {
+      top: 0.875rem; }
+    header .toggle-menu .lines:after {
+      top: -0.875rem; }
 header nav.menu {
   line-height: 100px;
   display: block;
