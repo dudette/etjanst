@@ -1875,14 +1875,13 @@ footer {
     color: #FFFFFF; }
 
 .show-all {
-  background: none;
   color: #13B5EA;
   padding: 10px;
   width: 100%;
   display: block;
-  text-align: center; }
-  .show-all img {
-    background: url("../img/arrow.svg") no-repeat 0 0;
+  text-align: center;
+  font-size: 18px; }
+  .show-all .arrow {
     display: block;
     height: 30px;
     margin: 0 auto;
@@ -1890,6 +1889,14 @@ footer {
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg); }
+    .show-all .arrow.collapse {
+      -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+      display: block;
+      height: 30px;
+      margin: 0 auto; }
 
 .section {
   padding: 20px 0; }
