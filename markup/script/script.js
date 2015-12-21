@@ -8,3 +8,7 @@ $(document).ready(function() {
 $(".toggle-menu").click(function () {	
 	$(".menu").slideToggle(200);
 });
+
+$(".all-service").click(function () {	
+	$(".all").slideToggle(200);
+});

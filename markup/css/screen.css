@@ -1927,6 +1927,9 @@ footer {
   .info-puff .content {
     padding: 15px; }
 
+.all {
+  display: none; }
+
 .service {
   position: relative;
   border: 2px solid #F2F2F2;
