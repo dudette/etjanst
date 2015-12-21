@@ -1647,7 +1647,7 @@ p {
   .top-nav ul {
     width: 100%;
     text-align: right;
-    display: block;
+    display: inline-block;
     padding: 10px 0; }
     .top-nav ul li {
       display: inline-block;
@@ -1659,7 +1659,8 @@ p {
           margin: 0;
           width: 50%;
           float: left;
-          text-align: left; }
+          text-align: left;
+          line-height: 2; }
           .top-nav ul li:nth-child(2n) {
             text-align: right; } }
       .top-nav ul li:last-child {
@@ -1671,8 +1672,7 @@ p {
           text-decoration: underline; }
         @media (max-width: 640px) {
           .top-nav ul li a {
-            display: block;
-            padding: 15px 0; } }
+            display: block; } }
 
 header .logo {
   float: left;
