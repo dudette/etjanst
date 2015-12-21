@@ -9,6 +9,6 @@ $(".toggle-menu").click(function () {
 	$(".menu").slideToggle(200);
 });
 
-$(".all-service").click(function () {	
+$(".show-all").click(function () {	
 	$(".all").slideToggle(200);
 });

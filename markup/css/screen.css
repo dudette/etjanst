@@ -1874,6 +1874,23 @@ footer {
     text-decoration: underline;
     color: #FFFFFF; }
 
+.show-all {
+  background: none;
+  color: #13B5EA;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  text-align: center; }
+  .show-all img {
+    background: url("../img/arrow.svg") no-repeat 0 0;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
 .section {
   padding: 20px 0; }
 
