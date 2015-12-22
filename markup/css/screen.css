@@ -353,7 +353,7 @@ hr {
     width: 970px; } }
 @media (min-width: 1200px) {
   .container {
-    width: 970px; } }
+    width: 1170px; } }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -1945,6 +1945,21 @@ footer {
   margin-right: 5px;
   margin-bottom: -3px; }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1201px) {
+  .container {
+    width: 1170px; } }
 .breadcrumbs {
   border-top: 2px solid #EBEBEB;
   border-bottom: 2px solid #EBEBEB;
